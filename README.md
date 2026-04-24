@@ -1,6 +1,6 @@
 # 🧪 SiGLab - Sistema de Gestão de Laboratórios
 
-🚀 API desenvolvida com **FastAPI** para controle de equipamentos, manutenção e reservas em laboratórios técnicos.
+🚀 Sistema de gestão de laboratórios (SigLab), desenvolvido com FastAPI, para controle de equipamentos, registro de manutenções e gerenciamento de reservas em ambientes técnicos.
 
 ---
 
