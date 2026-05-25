@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamentos - SigLab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="equipamentos_listagem.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+
+            <div class="logo-area">
+                <img src="../img/projetologosembgamarelo.png" alt="Logo SigLab">
+            </div>
+
+            <nav class="menu">
+                <a href="dashbord.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+                <a href="laboratorio_listagem.html"><i class="fa-solid fa-flask"></i> Laboratórios</a>
+                <a href="equipamentos_listagem.html" class="active"><i class="fa-solid fa-microchip"></i> Equipamentos</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Professores</a>
+                <a href="#"><i class="fa-solid fa-user-graduate"></i> Alunos</a>
+                <a href="manutencao_listagem.html"><i class="fa-solid fa-screwdriver-wrench"></i> Manutenções</a>
+                <a href="#"><i class="fa-solid fa-headset"></i> Chamados</a>
+                <a href="#"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
+                <a href="#"><i class="fa-solid fa-calendar"></i> Calendário</a>
+                <a href="#"><i class="fa-solid fa-gear"></i> Configurações</a>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
+            </nav>
+
+        </aside>
+
+        <main class="content">
+
+            <header class="topbar">
+                <!--
+                <div class="menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                -->
+
+                <div class="profile">
+                    <img src="https://i.pravatar.cc/100" alt="Usuário">
+                    <div>
+                        <strong>Administrador</strong>
+                        <p>admin@senai.edu.br</p>
+                    </div>
+                </div>
+            </header>
+
+            <section class="title-area">
+
+                <div>
+                    <h2>Equipamentos</h2>
+                    <p>Dashboard > Equipamentos</p>
+                </div>
+
+                <button class="btn-primary">
+                    <i class="fa-solid fa-plus"></i>
+                    Novo Equipamento
+                </button>
+
+            </section>
+
+            <section class="filters-grid">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text"
+                        placeholder="Pesquisar por nome, código, patrimônio, categoria ou laboratório...">
+                </div>
+
+                <div class="filters-right">
+
+                    <select>
+                        <option>Todos os Laboratórios</option>
+                        <option value="">Laboratório de eletrônica</option>
+                        <option value="">Laboratório de Informática</option>
+                        <option value="">Laboratório de química</option>
+                        <option value="">Laboratório de manufatura</option>
+                    </select>
+
+                    <select>
+                        <option>Todas Categorias</option>
+                        <option value="">Instrumentos</option>
+                        <option value="">Medição</option>
+                        <option value="">Computadores</option>
+                    </select>
+
+                    <select>
+                        <option>Todos Status</option>
+                        <option value="ativo">Ativo</option>
+                        <option value="manutencao">Em manutenção</option>
+                        <option value="inativo">Inativo</option>
+                        <option value="reservado">Reservado</option>
+                        <option value="indisponivel">Indisponível</option>
+                        <option value="descartado">Descartado</option>
+                    </select>
+
+                    <button class="filter-btn">
+                        <i class="fa-solid fa-filter"></i>
+                        Filtros
+                    </button>
+
+                    <div class="view-buttons">
+                        <button class="active">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                            Galeria
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-list"></i>
+                            Lista
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="table-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Equipamento</th>
+                            <th>Laboratório</th>
+                            <th>Categoria</th>
+                            <th>Patrimônio</th>
+                            <th>Status</th>
+                            <th>Condição</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>EQP-0001</td>
+                            <td>
+                                <div class="equipment-info">
+                                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=300"
+                                        alt="">
+                                    <div>
+                                        <strong>Multímetro Digital Fluke 115</strong>
+                                        <p>Multímetro digital para medições elétricas.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Lab. Eletrotécnica</td>
+                            <td>Instrumentos</td>
+                            <td>SENAI-001234</td>
+                            <td>
+                                <span class="badge-status active-status">Ativo</span>
+                            </td>
+                            <td>
+                                <span class="badge-status good-status">Bom</span>
+                            </td>
+                            <td class="actions">
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Editar
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    Excluir
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>EQP-0002</td>
+                            <td>
+                                <div class="equipment-info">
+                                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=300"
+                                        alt="">
+                                    <div>
+                                        <strong>Osciloscópio Tektronix</strong>
+                                        <p>Osciloscópio digital para testes eletrônicos.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Lab. Eletrônica</td>
+                            <td>Medição</td>
+                            <td>SENAI-001235</td>
+                            <td>
+                                <span class="badge-status active-status">Ativo</span>
+                            </td>
+                            <td>
+                                <span class="badge-status regular-status">Regular</span>
+                            </td>
+                            <td class="actions">
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Editar
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    Excluir
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EQP-0003</td>
+                            <td>
+                                <div class="equipment-info">
+                                    <img src="https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?q=80&w=300"
+                                        alt="">
+                                    <div>
+                                        <strong>Impressora 3D Ender 3</strong>
+                                        <p>Impressora para prototipagem rápida.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Lab. Manufatura</td>
+                            <td>Impressão 3D</td>
+                            <td>SENAI-001236</td>
+                            <td>
+                                <span class="badge-status active-status">Ativo</span>
+                            </td>
+                            <td>
+                                <span class="badge-status good-status">Bom</span>
+                            </td>
+                            <td class="actions">
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Editar
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    Excluir
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

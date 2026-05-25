@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SigLab Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="laboratorio_listagem.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <aside class="sidebar">
+
+        <div class="logo-area">
+            <a href="dashbord.html"><img src="../img/projetologosembgamarelo.png" alt="Logo SigLab"></a>
+        </div>
+
+        <nav class="menu">
+            <a href="dashbord.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+            <a href="laboratorio_listagem.html" class="active"><i class="fa-solid fa-flask"></i> Laboratórios</a>
+            <a href="equipamentos_listagem.html"><i class="fa-solid fa-microchip"></i> Equipamentos</a>
+            <a href="#"><i class="fa-solid fa-users"></i> Professores</a>
+            <a href="#"><i class="fa-solid fa-user-graduate"></i> Alunos</a>
+            <a href="manutencao_listagem.html"><i class="fa-solid fa-screwdriver-wrench"></i> Manutenções</a>
+            <a href="#"><i class="fa-solid fa-headset"></i> Chamados</a>
+            <a href="#"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
+            <a href="#"><i class="fa-solid fa-gear"></i> Configurações</a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+            <!--
+            <div class="menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            -->
+
+            <div class="profile">
+                <img src="https://i.pravatar.cc/100" alt="Usuário">
+                <div>
+                    <strong>Administrador</strong>
+                    <p>admin@senai.edu.br</p>
+                </div>
+            </div>
+        </header>
+
+       <section class="title-area">
+
+            <div>
+                <h2>Laboratórios</h2>
+                <p>Dashboard > Laboratórios</p>
+            </div>
+
+            <button class="btn-primary">
+                <i class="fa-solid fa-plus"></i>
+                Novo Laboratório
+            </button>
+
+        </section>
+        
+        <section class="filters-area">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar laboratório...">
+            </div>
+
+            <button class="filter-btn">
+                <i class="fa-solid fa-filter"></i>
+                Filtrar
+            </button>
+
+            <div class="view-buttons">
+                <button class="active">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                    Galeria
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-list"></i>
+                    Lista
+                </button>
+            </div>
+
+        </section>
+
+        <section class="labs-grid">
+
+            <div class="lab-card">
+                <img src="../img/senaialagoinhasIMG1.png" alt="Laboratório">
+                <div class="lab-content">
+                    <h3>Laboratório de Eletrônica</h3>
+                    <span>LAB-ELN-002</span>
+                    <p>
+                        Espaço para desenvolvimento e testes de circuitos eletrônicos.
+                    </p>
+                    <small>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Bloco A - 1º Andar
+                    </small>
+                </div>
+            </div>
+
+            <div class="lab-card">
+                <img src="../img/senaialagoinhasIMG1.png" alt="Laboratório">
+                <div class="lab-content">
+                    <h3>Laboratório de Eletrônica</h3>
+                    <span>LAB-ELN-002</span>
+                    <p>
+                        Espaço para desenvolvimento e testes de circuitos eletrônicos.
+                    </p>
+                    <small>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Bloco A - 1º Andar
+                    </small>
+                </div>
+            </div>
+
+            <div class="lab-card">
+                <img src="../img/senaialagoinhasIMG1.png" alt="Laboratório">
+                <div class="lab-content">
+                    <h3>Laboratório de Eletrônica</h3>
+                    <span>LAB-ELN-002</span>
+                    <p>
+                        Espaço para desenvolvimento e testes de circuitos eletrônicos.
+                    </p>
+                    <small>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Bloco A - 1º Andar
+                    </small>
+                </div>
+            </div>
+        </section>
+
+        <section class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Laboratório</th>
+                        <th>Localização</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LAB-ELT-001</td>
+                        <td>Laboratório de Eletrotécnica</td>
+                        <td>Bloco A</td>
+                        <td>
+                            <span class="status active">
+                                Ativo
+                            </span>
+                        </td>
+                        <td class="actions">
+                            <button class="btn btn-sm btn-outline-primary">
+                                Editar
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger">
+                                Excluir
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>LAB-ELT-001</td>
+                        <td>Laboratório de Eletrotécnica</td>
+                        <td>Bloco A</td>
+                        <td>
+                            <span class="status active">
+                                Ativo
+                            </span>
+                        </td>
+                        <td class="actions">
+                            <button class="btn btn-sm btn-outline-primary">
+                                Editar
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger">
+                                Excluir
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>LAB-ELT-001</td>
+                        <td>Laboratório de Eletrotécnica</td>
+                        <td>Bloco A</td>
+                        <td>
+                            <span class="status active">
+                                Ativo
+                            </span>
+                        </td>
+                        <td class="actions">
+                            <button class="btn btn-sm btn-outline-primary">
+                                Editar
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger">
+                                Excluir
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
