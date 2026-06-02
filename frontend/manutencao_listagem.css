@@ -21,16 +21,6 @@ body {
     color: white;
 }
 
-.logo-area {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.logo-area img {
-    width: 230px;
-}
-
 .menu {
     display: flex;
     flex-direction: column;

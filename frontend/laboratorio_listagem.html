@@ -24,19 +24,20 @@
     <aside class="sidebar">
 
         <div class="logo-area">
-            <a href="dashbord.html"><img src="../img/projetologosembgamarelo.png" alt="Logo SigLab"></a>
+            <a href="dashboard.html"><img src="../img/projetologosembgamarelo.png" alt="Logo SigLab"></a>
         </div>
 
         <nav class="menu">
-            <a href="dashbord.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+            <a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
             <a href="laboratorio_listagem.html" class="active"><i class="fa-solid fa-flask"></i> Laboratórios</a>
             <a href="equipamentos_listagem.html"><i class="fa-solid fa-microchip"></i> Equipamentos</a>
-            <a href="#"><i class="fa-solid fa-users"></i> Professores</a>
-            <a href="#"><i class="fa-solid fa-user-graduate"></i> Alunos</a>
+            <a href="professor_listagem.html"><i class="fa-solid fa-users"></i> Professores</a>
+            <a href="aluno_listagem.html"><i class="fa-solid fa-user-graduate"></i> Alunos</a>
             <a href="manutencao_listagem.html"><i class="fa-solid fa-screwdriver-wrench"></i> Manutenções</a>
-            <a href="#"><i class="fa-solid fa-headset"></i> Chamados</a>
-            <a href="#"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
-            <a href="#"><i class="fa-solid fa-gear"></i> Configurações</a>
+            <a href="chamado_listagem.html"><i class="fa-solid fa-headset"></i> Chamados</a>
+            <a href="relatorios.html"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
+            <a href="calendario.html"><i class="fa-solid fa-calendar"></i> Calendário</a>
+            <a href="configuracao.html"><i class="fa-solid fa-gear"></i> Configurações</a>
             <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
 
         </nav>
@@ -69,8 +70,10 @@
             </div>
 
             <button class="btn-primary">
-                <i class="fa-solid fa-plus"></i>
-                Novo Laboratório
+                <a href="laboratorio_cadastro.html">
+                    <i class="fa-solid fa-plus"></i>
+                    Novo Laboratório
+                </a>
             </button>
 
         </section>
@@ -222,8 +225,6 @@
     </main>
 
 </div>
-
-<script src="dashboard.js"></script>
 
 </body>
 </html>
