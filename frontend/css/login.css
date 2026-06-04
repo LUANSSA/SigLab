@@ -19,18 +19,21 @@ body{
 .login-left{
     width:50%;
 
-    background:linear-gradient(
-        180deg,
-        #0047b3,
-        #00307a
-    );
+    background:
+        linear-gradient(
+            rgba(0, 47, 122, 0.75),
+            rgba(0, 71, 179, 0.75)
+        ),
+        url("../img/laboratorioimg4.png");
 
-    color:white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     display:flex;
-    flex-direction:column;
-    justify-content:top;
+    justify-content:flex-start;
     align-items:center;
+    flex-direction:column;
 
     padding:60px;
 }
