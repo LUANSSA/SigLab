@@ -19,63 +19,306 @@
 </head>
 <body>
 
-<div class="dashboard-container">
+    <div class="dashboard-container">
 
-    <aside class="sidebar">
+        <aside class="sidebar">
 
-        <div class="logo-area">
-            <a href="dashboard.html"><img src="../img/projetologosembgamarelo.png" alt="Logo SigLab"></a>
-        </div>
-
-        <nav class="menu">
-            <a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
-            <a href="laboratorio_listagem.html"><i class="fa-solid fa-flask"></i> Laboratórios</a>
-            <a href="equipamentos_listagem.html"><i class="fa-solid fa-microchip"></i> Equipamentos</a>
-            <a href="professor_listagem.html"><i class="fa-solid fa-users"></i> Professores</a>
-            <a href="aluno_listagem.html" class="active"><i class="fa-solid fa-user-graduate"></i> Alunos</a>
-            <a href="manutencao_listagem.html"><i class="fa-solid fa-screwdriver-wrench"></i> Manutenções</a>
-            <a href="chamado_listagem.html"><i class="fa-solid fa-headset"></i> Chamados</a>
-            <a href="relatorios.html"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
-            <a href="calendario.html"><i class="fa-solid fa-calendar"></i> Calendário</a>
-            <a href="configuracao.html"><i class="fa-solid fa-gear"></i> Configurações</a>
-            <a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
-
-        </nav>
-
-    </aside>
-
-    <main class="content">
-
-        <header class="topbar">
-            <!--
-            <div class="menu-button">
-                <i class="fa-solid fa-bars"></i>
+            <div class="logo-area">
+                <a href="dashboard.html"><img src="../img/projetologosembgamarelo.png" alt="Logo SigLab"></a>
             </div>
-            -->
 
-            <div class="profile">
-                <img src="https://i.pravatar.cc/100" alt="Usuário">
-                <div>
-                    <strong>Administrador</strong>
-                    <p>admin@senai.edu.br</p>
+            <nav class="menu">
+                <a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+                <a href="laboratorio_listagem.html"><i class="fa-solid fa-flask"></i> Laboratórios</a>
+                <a href="equipamentos_listagem.html"><i class="fa-solid fa-microchip"></i> Equipamentos</a>
+                <a href="professor_listagem.html"><i class="fa-solid fa-users"></i> Professores</a>
+                <a href="aluno_listagem.html" class="active"><i class="fa-solid fa-user-graduate"></i> Alunos</a>
+                <a href="manutencao_listagem.html"><i class="fa-solid fa-screwdriver-wrench"></i> Manutenções</a>
+                <a href="chamado_listagem.html"><i class="fa-solid fa-headset"></i> Chamados</a>
+                <a href="relatorios.html"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
+                <a href="calendario.html"><i class="fa-solid fa-calendar"></i> Calendário</a>
+                <a href="configuracao.html"><i class="fa-solid fa-gear"></i> Configurações</a>
+                <a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
+
+            </nav>
+
+        </aside>
+
+        <main class="content">
+
+            <header class="topbar">
+                <!--
+                <div class="menu-button">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-            </div>
-        </header>
+                -->
 
-       <section class="title-area">
-            <div>
-                <h2>Alunos(as)</h2>
-                <p>Dashboard > Alunos(as)</p>
-            </div>
-            <button class="btn-primary">
-                <a href="aluno_cadastro.html">
-                    <i class="fa-solid fa-plus"></i>
-                    Novo Aluno(a)
-                </a>
-            </button>
-        </section>
-    </main>
-</div>
+                <div class="profile">
+                    <img src="https://i.pravatar.cc/100" alt="Usuário">
+                    <div>
+                        <strong>Administrador</strong>
+                        <p>admin@senai.edu.br</p>
+                    </div>
+                </div>
+            </header>
+
+        <section class="title-area">
+                <div>
+                    <h2>Alunos(as)</h2>
+                    <p>Dashboard > Alunos(as)</p>
+                </div>
+                <button class="btn-primary">
+                    <a href="aluno_cadastro.html">
+                        <i class="fa-solid fa-plus"></i>
+                        Novo Aluno(a)
+                    </a>
+                </button>
+            </section>
+
+            <section class="filters-area">
+
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text"
+                            placeholder="Pesquisar por nome, matrícula ou turma...">
+                    </div>
+
+                    <select>
+                        <option>Curso</option>
+                        <option>Fundamental II</option>
+                        <option>Ensino Médio</option>
+                        <option>Técnico</option>
+                    </select>
+
+                    <select>
+                        <option>Turma</option>
+                        <option>6° ano</option>
+                        <option>7° ano</option>
+                        <option>8° ano</option>
+                        <option>9° ano</option>
+                        <option>1° ano</option>
+                        <option>2° ano</option>
+                        <option>3° ano</option>
+                        <option>Química</option>
+                        <option>Eletrônica</option>
+                        <option>Automação</option>
+                        <option>Desenvolvimento</option>
+                        <option>Administração</option>
+                    </select>
+
+                    <button class="filter-btn">
+                        <i class="fa-solid fa-filter"></i>
+                        Filtros
+                    </button>
+
+            </section>
+
+            <section class="table-card">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Matrícula</th>
+                                <th>Nome</th>
+                                <th>Curso</th>
+                                <th>Turma</th>
+                                <th>Atividade</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>011248590</td>
+                                <td>Maria Mendes</td>
+                                <td>Técnico</td>
+                                <td>Automação</td>
+                                <td>
+                                    <span class="badge-status success-status">
+                                        Reserva em andamento
+                                    </span>
+                                </td>
+
+                                <td class="actions">
+                                    <button class="btn-action edit">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn-action delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>012235800</td>
+                                <td>Aline de Souza</td>
+                                <td>Fundamental II</td>
+                                <td>9° ano</td>
+                                <td>
+                                    <span class="badge-status success-status">
+                                        Sem reserva ativa
+                                    </span>
+                                </td>
+
+                                <td class="actions">
+                                    <button class="btn-action edit">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn-action delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>013458800</td>
+                                <td>Juliana Matos</td>
+                                <td>Ensino Médio</td>
+                                <td>2° ano</td>
+                                <td>
+                                    <span class="badge-status late-status">
+                                        Reserva em atraso
+                                    </span>
+                                </td>
+
+                                <td class="actions">
+                                    <button class="btn-action edit">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn-action delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>011248590</td>
+                                <td>Ricardo Rocha</td>
+                                <td>Técnico</td>
+                                <td>Química</td>
+
+                                <td>
+                                    <span class="badge-status success-status">
+                                        Reserva em andamento
+                                    </span>
+                                </td>
+
+                                <td class="actions">
+                                    <button class="btn-action edit">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn-action delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>012316470</td>
+                                <td>Clara Santana</td>
+                                <td>Ensino Médio</td>
+                                <td>3° ano</td>
+
+                                <td>
+                                    <span class="badge-status success-status">
+                                        Reserva em andamento
+                                    </span>
+                                </td>
+
+                                <td class="actions">
+                                    <button class="btn-action edit">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn-action delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>011248590</td>
+                                <td>João Oliveira</td>
+                                <td>Técnico</td>
+                                <td>Edificações</td>
+
+                                <td>
+                                    <span class="badge-status success-status">
+                                        Sem reserva ativa
+                                    </span>
+                                </td>
+
+                                <td class="actions">
+                                    <button class="btn-action edit">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn-action delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>012559600</td>
+                                <td>Beatriz Pontes</td>
+                                <td>Técnico</td>
+                                <td>Desenvolvimento</td>
+
+                                <td>
+                                    <span class="badge-status success-status">
+                                        Reserva em andamento
+                                    </span>
+                                </td>
+
+                                <td class="actions">
+                                    <button class="btn-action edit">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn-action delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>013552180</td>
+                                <td>Henrique Almeida</td>
+                                <td>Fundamental II</td>
+                                <td>7° ano</td>
+
+                                <td>
+                                    <span class="badge-status late-status">
+                                        Reserva em atraso
+                                    </span>
+                                </td>
+
+                                <td class="actions">
+                                    <button class="btn-action edit">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn-action delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            
+
+                        </tbody>
+
+                    </table>
+
+                </section>
+        </main>
+    </div>
 
 </body>
 </html>
