@@ -14,7 +14,7 @@
 .filters-area {
     margin-top: 25px;
     display: grid;
-    grid-template-columns: 2fr 180px 180px 150px;
+    grid-template-columns: 2fr 180px;
     gap: 15px;
 }
 
