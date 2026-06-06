@@ -38,6 +38,7 @@ body{
 
     box-shadow:
     0 15px 40px rgba(0,0,0,.15);
+
 }
 
 .auth-card.large{
@@ -84,7 +85,8 @@ body{
 
     padding:0 15px;
 
-    font-size:15px;
+    font-size:15px;  
+
 }
 
 .form-group input:focus,
