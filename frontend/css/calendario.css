@@ -1,0 +1,99 @@
+.new-btn {
+    background: #0d47a1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.barra-calendario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.navegacao-data {
+    display: flex;
+    gap: 10px;
+}
+
+.navegacao-data button {
+    padding: 10px 15px;
+    border: 1px solid #dcdcdc;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.mes-atual {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.acoes-calendario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter-btn {
+    border: none;
+    background: white;
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.modos-visualizacao {
+    display: flex;
+}
+
+.modos-visualizacao button {
+    padding: 10px 18px;
+    border: 1px solid #dcdcdc;
+    background: white;
+    cursor: pointer;
+}
+
+.modos-visualizacao button:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.modos-visualizacao button:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.modos-visualizacao .ativo {
+    background: #0d47a1;
+    color: white;
+}
+
+
+@media(max-width: 1200px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filters-area {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 900px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
