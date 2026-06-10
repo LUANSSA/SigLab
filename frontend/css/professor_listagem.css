@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    border: 1px solid #e0e0e0;
 }
 
 .search-box input {
@@ -39,6 +40,11 @@
     background: white;
     border-radius: 14px;
     padding: 14px;
+    border: 1px solid #e0e0e0;
+}
+.filter-btn:hover {
+    background:#eaf1ff;
+    color:#0047b3;
 }
 
 .table-card {
@@ -46,6 +52,7 @@
     margin-top: 25px;
     border-radius: 18px;
     overflow: hidden;
+    border: 1px solid #e0e0e0;
 }
 
 table {
