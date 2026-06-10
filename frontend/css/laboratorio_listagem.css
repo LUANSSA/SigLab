@@ -20,6 +20,7 @@
     display:flex;
     align-items:center;
     gap:10px;
+    border: 1px solid #e0e0e0;
 }
 
 .search-box input{
@@ -41,6 +42,7 @@
     border-radius:18px;
     overflow:hidden;
     box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
 }
 
 .lab-card img{
@@ -60,10 +62,19 @@
 }
 
 .status.active{
-    background:#dff5e8;
-    color:#198754;
+    background: #dcfce7;
+    color: #166534;
 }
 
+.status.inactive{
+    background:#e4e4e4;
+    color:#555;
+}
+
+.status.maintenance {
+    background: #fef3c7;
+    color: #b45309;
+}
 
 .filter-btn{
     background:#fff;
@@ -80,17 +91,14 @@
 }
 
 .filter-btn:hover{
-    background:#f4f6f9;
-}
-
-thead {
-    background: #fafafa;
+    background:#eaf1ff;
+    color:#0047b3;
 }
 
 .view-buttons{
     display:flex;
     background:#fff;
-    border:1px solid #dfe3eb;
+    border: 1px solid #e0e0e0;
     border-radius:12px;
     overflow:hidden;
 }
@@ -108,13 +116,16 @@ thead {
     transition:0.3s;
 }
 
-.view-buttons button:hover{
-    background:#f4f6f9;
+.view-buttons .active{
+    background: #0d47a1;
+    color: white;
 }
 
-.view-buttons .active{
+.view-buttons .inactive:hover{
     background:#eaf1ff;
     color:#0047b3;
-    font-weight:600;
 }
 
+.table-card {
+    border: 1px solid #e0e0e0;
+}
