@@ -68,7 +68,13 @@
     border:1px solid #dfe3eb;
     border-radius:12px;
     cursor:pointer;
-    font-weight:600;
+}
+
+.filter-btn:hover,
+.option-btn:hover,
+.date:hover {
+background:#eaf1ff;
+color:#0047b3;
 }
 
 /* =====================================
@@ -87,6 +93,7 @@
     border-radius:16px;
     padding:20px;
     box-shadow:0 4px 10px rgba(0,0,0,.05);
+    
 }
 
 .stat-card i{
