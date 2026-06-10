@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    gap: 16px;
     margin-bottom: 25px;
 }
 
@@ -48,15 +48,19 @@
 .filter-btn:hover,
 .modos-visualizacao .inativo:hover,
 .mes-dropdown:hover {
-    background: #dddddd;
+    background:#eaf1ff;
+    color:#0047b3;
     cursor: pointer;
 }
 
 .mes-atual {
+    flex: 1;
     display: flex;
 }
 
 .mes-texto {
+    flex: 1;
+    justify-content: center;
     height: 42px;
 
     padding: 0 18px;
@@ -211,7 +215,8 @@
 }
 
 .dia:hover {
-    background: #dddddd;
+    background: #eaf1ff;
+    color:#0047b3;
 }
 
 .dia-atual {
