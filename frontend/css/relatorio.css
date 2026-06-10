@@ -51,13 +51,14 @@
     gap:15px;
     margin-bottom:25px;
     box-shadow:0 4px 10px rgba(0,0,0,.05);
+    
 }
 
 .filters-grid select,
 .filters-grid input{
     width:100%;
     height:50px;
-    border:1px solid #dfe3eb;
+    border: 1px solid #e0e0e0;
     border-radius:12px;
     padding:0 15px;
     outline:none;
@@ -65,10 +66,16 @@
 
 .filter-btn{
     background:white;
-    border:1px solid #dfe3eb;
+    border: 1px solid #e0e0e0;
     border-radius:12px;
     cursor:pointer;
-    font-weight:600;
+}
+
+.filter-btn:hover,
+.option-btn:hover,
+.date:hover {
+background:#eaf1ff;
+color:#0047b3;
 }
 
 /* =====================================
@@ -87,6 +94,7 @@
     border-radius:16px;
     padding:20px;
     box-shadow:0 4px 10px rgba(0,0,0,.05);
+    border: 1px solid #e0e0e0;
 }
 
 .stat-card i{
@@ -131,7 +139,7 @@
 }
 
 .stat-card p{
-    color:#666;
+    color:#555;
     margin-top:5px;
 }
 
@@ -152,6 +160,7 @@
     padding:25px;
     box-shadow:0 4px 10px rgba(0,0,0,0.05);
     height:380px;
+    border: 1px solid #e0e0e0;
 }
 
 .chart-card h3{
@@ -173,6 +182,7 @@
     display:grid;
     grid-template-columns:2fr 1fr;
     gap:20px;
+    
 }
 
 .table-card,
@@ -180,11 +190,12 @@
     background:white;
     border-radius:16px;
     box-shadow:0 4px 10px rgba(0,0,0,.05);
+    border: 1px solid #e0e0e0;
 }
 
 .section-header{
     padding:20px;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #e0e0e0;
 }
 
 .section-header h3{
@@ -199,10 +210,10 @@
 .table-card table{
     width:100%;
     border-collapse:collapse;
+
 }
 
 .table-card th{
-    background:#fafafa;
     padding:18px;
     text-align:left;
     font-size:14px;
@@ -210,7 +221,7 @@
 
 .table-card td{
     padding:18px;
-    border-top:1px solid #eee;
+    border-top:1px solid #e0e0e0;
 }
 
 .table-card tr:hover{
@@ -223,6 +234,7 @@
 
 .quick-reports{
     padding:25px;
+    border: 1px solid #e0e0e0;
 }
 
 .quick-reports h3{
@@ -237,10 +249,11 @@
     text-decoration:none;
     color:#1d2b53;
     padding:15px 0;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #e0e0e0;
 }
 
 .quick-reports a:hover{
+    background:#eaf1ff;
     color:#0047b3;
 }
 
