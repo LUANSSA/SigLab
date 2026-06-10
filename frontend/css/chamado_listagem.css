@@ -1,0 +1,55 @@
+.table-container{
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.table{
+    margin-bottom: 0;
+}
+
+.table th{
+    font-weight: 600;
+    color: #1d2b53;
+}
+
+.table td{
+    vertical-align: middle;
+}
+
+.actions{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.actions i{
+    transition: 0.3s;
+}
+
+.actions i:hover{
+    color: #0047b3;
+}
+
+.status{
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status.aberto{
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.status.andamento{
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.status.resolvido{
+    background: #dcfce7;
+    color: #16a34a;
+}

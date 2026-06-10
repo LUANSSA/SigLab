@@ -1,0 +1,158 @@
+.menu a:hover,
+.menu .active {
+    background: rgba(255,255,255,0.15);
+}
+
+.btn-primary {
+    background: #0047b3;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 12px;
+}
+
+.filters-area {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 2fr 180px;
+    gap: 15px;
+}
+
+.search-box {
+    background: white;
+    border-radius: 14px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.filters-area select,
+.filter-btn {
+    border: none;
+    background: white;
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.table-card {
+    background: white;
+    margin-top: 25px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+th {
+    font-size: 14px;
+}
+
+.equipment-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.equipment-info img {
+    width: 90px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.badge-status {
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+.success-status {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.warning-status {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.late-status {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.danger-status {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.regular-status {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-action {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.edit {
+    background: #e0edff;
+    color: #0047b3;
+}
+
+.delete {
+    background: #ffe5e5;
+    color: #dc2626;
+}
+
+@media(max-width: 1200px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filters-area {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 900px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
