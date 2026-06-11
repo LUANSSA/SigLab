@@ -1,42 +1,49 @@
 from fastapi import APIRouter
 
+from app.laboratorio.service import LaboratorioService
+from app.laboratorio.dto import LaboratorioCadastrarDTO
+
 router = APIRouter(
     prefix="/laboratorios",
     tags=["Laboratórios"]
 )
 
+service = LaboratorioService()
+
 
 # Laboratório | Listagem
 @router.get("/listagem")
 def laboratorio_listagem():
-    return {
-        "mensagem": "Listagem de laboratórios"
-    }
+    return service.listar()
+
 
 # Laboratório | Buscar por id
-@router.get("/buscar/{id}")
-def laboratorio_buscar(id: int):
-    return {
-        "mensagem": "Listagem de laboratório"
-    }
+@router.get("/buscar/{id_laboratorio}")
+def laboratorio_buscar(id_laboratorio: int):
+    return service.buscar_por_id(id_laboratorio)
+
 
 # Laboratório | Cadastrar
 @router.post("/cadastrar")
-def laboratorio_cadastrar():
-    return {
-        "mensagem": "Cadastro de laboratório"
-    }
+def laboratorio_cadastrar(
+    laboratorio: LaboratorioCadastrarDTO
+):
+    return service.cadastrar(laboratorio)
+
 
 # Laboratório | Atualizar
-@router.put("/atualizar/{id}")
-def laboratorio_atualizar(id: int):
-    return {
-        "mensagem": "Atualização de laboratório"
-    }
+@router.put("/atualizar/{id_laboratorio}")
+def laboratorio_atualizar(
+    id_laboratorio: int,
+    laboratorio: LaboratorioCadastrarDTO
+):
+    return service.atualizar(
+        id_laboratorio,
+        laboratorio
+    )
+
 
 # Laboratório | Excluir
-@router.delete("/excluir/{id}")
-def laboratorio_excluir(id: int):
-    return {
-        "mensagem": "Excluir laboratório"
-    }
+@router.delete("/excluir/{id_laboratorio}")
+def laboratorio_excluir(id_laboratorio: int):
+    return service.excluir(id_laboratorio)
