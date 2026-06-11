@@ -1,18 +1,7 @@
 from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
+from app.laboratorio.router import router as laboratorio_rotas
 
 app = FastAPI()
 
-@app.get("/", response_class=HTMLResponse)
-def home():
-     return  """
-            <html>
-                <head>
-                    <title>SENAI</title>
-                </head>
-                <body>
-                    <h1>Olá, mundo 👋</h1>
-                    <p>Meu sistema está rodando! API SENAI rodando 🚀</p>
-                </body>
-            </html>
-    """
+# Rotas de laboratórios
+app.include_router(laboratorio_rotas)
